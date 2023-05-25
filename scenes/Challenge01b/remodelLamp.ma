@@ -1,17 +1,18 @@
 //Maya ASCII 2024 scene
 //Name: remodelLamp.ma
-//Last modified: Wed, May 24, 2023 07:11:35 PM
+//Last modified: Wed, May 24, 2023 07:20:55 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "F9F1D74C-47CF-6635-55B4-72985CC21824";
+fileInfo "UUID" "B94F174A-4A7C-9D49-631E-9ABF9FB8D755";
 createNode transform -s -n "persp";
 	rename -uid "3CF46723-4B99-E7B9-422F-6FBA3B5EE341";
 	setAttr ".v" no;
@@ -1400,20 +1401,20 @@ createNode camera -n "backShape" -p "back";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "7FEDEAB1-45A6-8A1E-A0A9-7E9E0102EFC6";
+	rename -uid "869BE273-4537-DF8B-2AFC-93B8CE10309E";
 	setAttr -s 8 ".lnk";
 	setAttr -s 8 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "403133D7-43AF-D502-C8A2-E5BB90D89A9F";
+	rename -uid "88CFC7B7-467A-D139-D2A5-4C93DA105126";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "C4C90390-4B13-1530-0FBB-29A946442C57";
+	rename -uid "87451CAF-469F-6937-82E0-A997690CA1E4";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "9D9CFDE4-4E31-5DD7-DC04-11B633CF200B";
+	rename -uid "58E75749-4AC0-FFC1-05C7-799E4AA05668";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "5F4159B8-4F32-A3DE-34FD-A48CC79E1BF3";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "D2155B82-4AFF-8AAD-4A63-96AA41CB87AB";
+	rename -uid "76979D42-4E08-5386-1BDE-48BB116A6FC7";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3B5E6E78-4DC9-93CB-3567-8D82D2C159BE";
 	setAttr ".g" yes;
@@ -2507,7 +2508,6 @@ createNode materialInfo -n "materialInfo3";
 createNode blinn -n "shadeBlinn";
 	rename -uid "0FD033CA-4192-58C8-2BD3-91942D55D338";
 	setAttr ".c" -type "float3" 0.234 0.5 0.336308 ;
-	setAttr ".it" -type "float3" 0.81290323 0.81290323 0.81290323 ;
 createNode shadingEngine -n "blinn2SG";
 	rename -uid "91ABF3BB-4B89-A905-7BE3-1C889E2068FB";
 	setAttr ".ihi" 0;
@@ -2555,34 +2555,34 @@ createNode groupParts -n "groupParts7";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 20 "f[1]" "f[3]" "f[5]" "f[7]" "f[9]" "f[11]" "f[13]" "f[15]" "f[17]" "f[19]" "f[285]" "f[287]" "f[289]" "f[291]" "f[293]" "f[295]" "f[297]" "f[299]" "f[301]" "f[303]";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "34E31053-4933-725B-568A-BE9CCC0E3DC6";
+	rename -uid "05714DA5-4AF6-1084-2E15-1D8769315953";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -115.88268993646678 -3629.6649738498254 ;
-	setAttr ".tgi[0].vh" -type "double2" 2262.8241454686577 3084.4269002775436 ;
+	setAttr ".tgi[0].vl" -type "double2" -231.56212784848989 -7044.894222577509 ;
+	setAttr ".tgi[0].vh" -type "double2" 4566.6568065358142 6498.4656728620575 ;
 	setAttr -s 8 ".tgi[0].ni";
 	setAttr ".tgi[0].ni[0].x" 144.28572082519531;
 	setAttr ".tgi[0].ni[0].y" -87.142860412597656;
 	setAttr ".tgi[0].ni[0].nvs" 1923;
 	setAttr ".tgi[0].ni[1].x" 144.28572082519531;
-	setAttr ".tgi[0].ni[1].y" -131.42857360839844;
+	setAttr ".tgi[0].ni[1].y" -87.142860412597656;
 	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" 451.42855834960938;
+	setAttr ".tgi[0].ni[2].x" 144.28572082519531;
 	setAttr ".tgi[0].ni[2].y" -87.142860412597656;
 	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" 144.28572082519531;
-	setAttr ".tgi[0].ni[3].y" -87.142860412597656;
+	setAttr ".tgi[0].ni[3].x" 451.42855834960938;
+	setAttr ".tgi[0].ni[3].y" -131.42857360839844;
 	setAttr ".tgi[0].ni[3].nvs" 1923;
-	setAttr ".tgi[0].ni[4].x" 144.28572082519531;
+	setAttr ".tgi[0].ni[4].x" 451.42855834960938;
 	setAttr ".tgi[0].ni[4].y" -87.142860412597656;
 	setAttr ".tgi[0].ni[4].nvs" 1923;
 	setAttr ".tgi[0].ni[5].x" 451.42855834960938;
 	setAttr ".tgi[0].ni[5].y" -87.142860412597656;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
 	setAttr ".tgi[0].ni[6].x" 451.42855834960938;
-	setAttr ".tgi[0].ni[6].y" -131.42857360839844;
+	setAttr ".tgi[0].ni[6].y" -87.142860412597656;
 	setAttr ".tgi[0].ni[6].nvs" 1923;
-	setAttr ".tgi[0].ni[7].x" 451.42855834960938;
-	setAttr ".tgi[0].ni[7].y" -87.142860412597656;
+	setAttr ".tgi[0].ni[7].x" 144.28572082519531;
+	setAttr ".tgi[0].ni[7].y" -131.42857360839844;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 select -ne :time1;
 	setAttr ".o" 1;
@@ -2803,19 +2803,19 @@ connectAttr "groupParts6.og" "groupParts7.ig";
 connectAttr "groupId7.id" "groupParts7.gi";
 connectAttr "bulbCapBlinn.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
-connectAttr "bulbLambert.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+connectAttr "standBlinn.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
 		;
-connectAttr "blinn2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+connectAttr "shadeBlinn.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
-connectAttr "standBlinn.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+connectAttr "lambert3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
 		;
-connectAttr "shadeBlinn.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+connectAttr "blinn1SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
 		;
-connectAttr "blinn3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+connectAttr "blinn2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "lambert3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+connectAttr "blinn3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
 		;
-connectAttr "blinn1SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
+connectAttr "bulbLambert.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
 		;
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "blinn1SG.pa" ":renderPartition.st" -na;
