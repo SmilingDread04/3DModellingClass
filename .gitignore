@@ -4,3 +4,11 @@
 *.painter_lock
 
 *.zpr
+
+sourceimages/3dPaintTextures/Table/tableBalls/
+
+sourceimages/3dPaintTextures/Table/tableBase/
+
+sourceimages/3dPaintTextures/Table/tableLegs/
+
+sourceimages/
